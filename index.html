@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<!-- ========================================
+     HEAD SECTION
+     Contains metadata, title, and all stylesheets
+     ======================================== -->
+<head>
+    <!-- Character encoding and viewport configuration -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Page title displayed in browser tab -->
+    <title>The Reserve | Exquisite Flavors, Timeless Heritage</title>
+
+    <!-- Bootstrap 5.3.3 CSS Framework for responsive design -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <!-- Bootstrap Icons library for icon usage throughout the site -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css" rel="stylesheet">
+
+    <!-- Google Fonts: EB Garamond (serif) for elegant headings + Be Vietnam Pro (sans-serif) for body text -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400..800;1,400..800&family=Be+Vietnam+Pro:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom stylesheet with restaurant-specific styles and colors -->
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+<!-- ========================================
+     BODY SECTION
+     Main content of the website
+     ======================================== -->
+<body>
+
+    <!-- ========================================
+         HEADER SECTION
+         Fixed navigation bar with restaurant logo and menu links
+         ======================================== -->
+    <header class="fixed-top">
+
+        <!-- Navigation Bar -->
+        <nav class="navbar navbar-expand-md">
+            <div class="container-fluid max-width-container px-lg-5">
+                
+                <!-- Restaurant Logo: Icon + Name -->
+                <a class="navbar-brand d-flex align-items-center gap-2 " href="#home">
+                    <i class="bi bi-cup-hot-fill text-mahogany fs-3 "></i>
+                    <h1 class="font-serif">The Reserve</h1>
+                </a>
+
+                <!-- Mobile Menu Toggle Button (Hamburger menu for responsive design) -->
+                <button class="navbar-toggler border-0" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navContent" aria-controls="navContent" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <i class="bi bi-list fs-1 text-dark"></i>
+                </button>
+
+                <!-- Main Navigation Links -->
+                <div class="collapse navbar-collapse justify-content-end" id="navContent">
+                    <ul class="navbar-nav align-items-md-center mt-3 mt-md-0 text-center text-md-start">
+                        <!-- Navigation Items -->
+                        <li class="nav-item"><a class="nav-link active" href="#home">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#menu">Menu</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#about">About Us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contact">Contact</a></li>
+
+                        <!-- Booking Button -->
+                        <li class="nav-item ms-md-3 mt-3 mt-md-0">
+                            <button class="btn btn-mahogany w-100" data-bs-toggle="modal" data-bs-target="#bookingModal"
+                                href="#booking">
+                                Book Now
+                            </button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- ========================================
+         MAIN CONTENT SECTION
+         Contains all primary content sections
+         ======================================== -->
+    <main>
+        
+        <!-- ========================================
+             HERO SECTION
+             Large banner image with restaurant tagline and call-to-action buttons
+             ======================================== -->
+        <section id="home">
+            <!-- Hero Background Image -->
+            <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuDUzaxiQRPV2N5u5w5cwcfOkzMV_8st_9qRsMaQUOuocmGy-PmwBtoHDVZCTLhKM3_FTfIhQa18mhUV7PQFzQC8GGzUtwq7KhxcZYSSmYCLNSbXvRP16k4q2GwdcxcFITWrQuOYcKxrvpaTT9mMiTV1x0l-Rs3e_Inf7CaiZkh8pBLWJgIdGGICPNJPvc9D49RuCqHOeDS6zCHNz0rxDfvJvwt5NN18K-gv9enwnx02dhd2xiKlxlCC5OxGnHVMcF9B2ORq2y232Qo"
+                alt="Seared fine food at The Reserve">
+
+            <!-- Hero Overlay Content -->
+            <div class="hero-overlay">
+                <!-- Founding Year -->
+                <p class="hero-year">Established 1984</p>
+                
+                <!-- Main Headline -->
+                <h1 class="hero-title">Exquisite Flavors, Timeless Heritage</h1>
+                
+                <!-- Call-to-Action Buttons -->
+                <div class="hero-buttons">
+                    <a href="#booking">Book a Table</a>
+                    <a href="#menu">Explore Menu</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             MENU SECTION
+             Displays featured menu items in a responsive grid layout
+             ======================================== -->
+        <section id="menu">
+            <!-- Menu Section Title -->
+            <h1 class="menu-title-main">The Seasonal Curation</h1>
+
+            <!-- Menu Items Container - Bootstrap Grid System -->
+            <div class="menu-container">
+                <div class="row g-4">
+                    
+                    <!-- Menu Item 1: Pan-Seared Scallops -->
+                    <div class="col-12 col-md-4 menu-col" data-category="seafood">
+                        <div class="menu-card">
+                            <!-- Menu Item Image -->
+                            <div class="menu-img-container">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuA-LDzOWMYdkfTuG-FBvALrrbH2OsjLXc4ykbac5EIs8G7E0ulGl7y0M2Yuysm_zr2OnTvT8RVf00h_vdRNhm66L_UMNfnoGCh0hou16V63vmPCSLT9nkR8IDUhi9yMyCYMxHoHGRU0-6Q1lLOGHE7r20Cjf4fiS_8NP6SHCibYij_kDcVwJCyJ0WvZRu_BcFg0CWcS7Y7g1bVrp9kUBRNLl0KEsdXj2bGHlAviUvlyHSgFersBPpiYk-dHt8MnwskWv1yyB5yYTPQ"
+                                    alt="Pan-Seared Scallops">
+                            </div>
+                            <!-- Menu Item Details: Name, Price, Description -->
+                            <h4 class="menu-title">Pan-Seared Scallops</h4>
+                            <span class="menu-price">$28</span>
+                            <p class="menu-desc">Succulent scallops with pea puree</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 2: Truffle Risotto -->
+                    <div class="col-12 col-md-4 menu-col" data-category="signature">
+                        <div class="menu-card">
+                            <!-- Menu Item Image -->
+                            <div class="menu-img-container">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuCsjojyPVVXXDxz3_OAlPxDqq0WSTMkHPQovyIs7dk4TZOdxvq5OlfAFoLffWL9WmJpfCdl6ZwgOJosjYi_VH7hF8WG3gZ5GVvsZFD1pE9imMZzvAuq7nqwcUqG26Tr60dryVUKvV_Kjg_gbzoOhMkNVyKWvxL42CuuhOgbDjd1BPMHfvb0sFAqAbwu4Bz88vYalkPhEaFvbYTPrYlOkbfZ2oLCSWlrS-z09cVnfRtA4sSV51W7ut5smqJ0qSkRl9dGVPvDfHUwYb0"
+                                    alt="Truffle Risotto">
+                            </div>
+                            <!-- Menu Item Details: Name, Price, Description -->
+                            <h4 class="menu-title">Truffle Risotto</h4>
+                            <span class="menu-price">$34</span>
+                            <p class="menu-desc">Creamy arborio rice with black truffle</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 3: Filet Mignon -->
+                    <div class="col-12 col-md-4 menu-col" data-category="mains">
+                        <div class="menu-card">
+                            <!-- Menu Item Image -->
+                            <div class="menu-img-container">
+                                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBI7_AOZmmnZIewpy1NgZxRmDnVudMDzpsMStL2IpYADVH9Ik8GjFDbLPYoSjXe_PZi6koctbyC3Wy0acY3NvAf8iUdpSR15XV8902deiFfB3FbOSrQVhFh97PkjDEWyj3Q9wqt1Pb4lpwKprpLfjF_SNEhybVfzLK8LnZEJ8IKV2rocxg5I6zL2Ula1BHm8zG02Q2Nn6461DY44NUM6FNJlDK4DZGXz9jVzm9MOpZjNRxg0rcGi5qVgeIyjP0HVc9-DWOjEXbgIlg"
+                                    alt="Filet Mignon">
+                            </div>
+                            <!-- Menu Item Details: Name, Price, Description -->
+                            <h4 class="menu-title">Filet Mignon</h4>
+                            <span class="menu-price">$42</span>
+                            <p class="menu-desc">Grass-fed beef with rosemary butter</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 4: Lavender Glazed Duck -->
+                    <div class="col-12 col-md-4 menu-col" data-category="signature">
+                        <div class="menu-card">
+                            <!-- Menu Item Image -->
+                            <div class="menu-img-container">
+                                <img src="Images/First dish.jpg" alt="Lavender Glazed Duck">
+                            </div>
+                            <!-- Menu Item Details: Name, Price, Description -->
+                            <h4 class="menu-title">Lavender Glazed Duck</h4>
+                            <span class="menu-price">$38</span>
+                            <p class="menu-desc">Pan-roasted duck with lavender glaze</p>
+                        </div>
+                    </div>
+
+                    <!-- Menu Item 5: Botanical Garden Tart -->
+                    <div class="col-12 col-md-4 menu-col" data-category="vegetarian">
+                        <div class="menu-card">
+                            <!-- Menu Item Image -->
+                            <div class="menu-img-container">
+                                <img src="Images/charcoal-grilled-spicy.jpg" alt="Botanical Garden Tart">
+                            </div>
+                            <!-- Menu Item Details: Name, Price, Description -->
+                            <h4 class="menu-title">Botanical Garden Tart</h4>
+                            <span class="menu-price">$14</span>
+                            <p class="menu-desc">Seasonal vegetables in crispy pastry shell</p>
+                        </div>
+                    </div>
+
+                    <!-- Link to Full Dinner Menu -->
+                    <h3 class="menu-cta"><a href="https://bootstrap-responsive-web-projects.netlify.app/#">View Full Dinner Menu</a></h3>
+                </div>
+            </div>
+        </section>
+
+        <!-- ========================================
+             ABOUT SECTION
+             Restaurant story and philosophy with accompanying image
+             ======================================== -->
+        <section id="about" class="about-section-grid">
+            <!-- About Text Content -->
+            <div class="about-content">
+                <!-- Section Label -->
+                <span class="about-label">Our Story</span>
+                
+                <!-- Main Heading -->
+                <h2 class="about-heading">Culinary Tradition Meets Modern Sophistication</h2>
+                
+                <!-- About Paragraphs: Mission and Values -->
+                <p>
+                    Since its inception, The Reserve has remained committed to the art of the meal. We believe that fine
+                    dining is more than just nutrition; it's a sensory journey that honors the heritage of our ingredients
+                    while embracing modern culinary techniques.
+                </p>
+                <p>
+                    Our kitchen is a sanctuary where locally sourced produce and traditional recipes are elevated by the
+                    precision of modern gastronomy. Every plate tells a story of the farmers, the seasons, and our
+                    unyielding pursuit of culinary excellence.
+                </p>
+            </div>
+
+            <!-- About Section Image -->
+            <div class="about-image-wrapper">
+                <img src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQf6OeZX7qgiMoE92n6jsLfQVkt_8JULQ_Rw9KXw5t4pJm6SCLZCq5-FI9AdOKLAABxwY_RIJvGO4IH5nEwUmvAixEDdchR1wPoja_rboGvR3zXnW-hpnUG-5tj4_rzgW1rnl-cWVI1ko5Q2rt8uKdTKJk_JuWaMAC0dMT8OTxWtUcb7UG1ntRm_LICoxYFRA2lK2Tc3IWDQp2Qv61w_cZ2TNXTfCNvijjeJtjh5V_dD_wQJhl97CBnhhlBhm_eHTf_JY2v0ZlxEQ"
+                    alt="The Reserve Kitchen">
+            </div>
+        </section>
+
+        <!-- ========================================
+             CONTACT SECTION
+             Contact form for customer inquiries and reservations
+             ======================================== -->
+        <section id="contact" class="contact-section">
+            <div class="container max-width-600">
+                <!-- Contact Header with Title and Message -->
+                <div class="contact-header">
+                    <h3>Inquiries & Reservations</h3>
+                    <p>We welcome your presence. Please allow 24 hours for a personal response.</p>
+                    <div class="divider-line"></div>
+                </div>
+
+                <!-- Contact Form -->
+                <form class="contact-form">
+                    <!-- Name and Email Fields Row -->
+                    <div class="form-row">
+                        <!-- Name Input Field -->
+                        <div class="form-group">
+                            <input type="text" id="contactName" class="form-input" placeholder=" " required>
+                            <label for="contactName" class="form-label">Your Name</label>
+                            <div class="form-underline"></div>
+                        </div>
+
+                        <!-- Email Input Field -->
+                        <div class="form-group">
+                            <input type="email" id="contactEmail" class="form-input" placeholder=" " required>
+                            <label for="contactEmail" class="form-label">Email Address</label>
+                            <div class="form-underline"></div>
+                        </div>
+                    </div>
+
+                    <!-- Message Textarea Field -->
+                    <div class="form-group">
+                        <textarea id="contactMessage" class="form-input form-textarea" placeholder=" " rows="5" required></textarea>
+                        <label for="contactMessage" class="form-label">Your Message</label>
+                        <div class="form-underline"></div>
+                    </div>
+
+                    <!-- Submit Button -->
+                    <button type="submit" class="btn-submit">Send Message</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ========================================
+         FOOTER SECTION
+         Contains restaurant information, links, and social media
+         ======================================== -->
+    <footer class="site-footer">
+        <div class="footer-grid">
+            <!-- Footer Brand Section -->
+            <div class="footer-brand">
+                <h2 class="name">The Reserve</h2>
+                <p>124 Heritage Way, Gastronomy District</p>
+            </div>
+
+            <!-- Footer Center: Links and Copyright -->
+            <div class="footer-center">
+                <!-- Social and Policy Links -->
+                <ul class="footer-links">
+                    <li><a href="#">Instagram</a></li>
+                    <li><a href="#">Facebook</a></li>
+                    <li><a href="#">Twitter</a></li>
+                    <li><a href="#">Privacy Policy</a></li>
+                </ul>
+                <!-- Copyright Notice -->
+                <p class="footer-copyright">&copy; 2026 The Reserve. All rights reserved.</p>
+            </div>
+
+            <!-- Footer Contact: Social Media Icons -->
+            <div class="footer-contact">
+                <div class="footer-socials">
+                    <!-- Share Icon -->
+                    <a class="footer-social" href="#" title="Share">
+                        <i class="bi bi-share-fill"></i>
+                    </a>
+                    <!-- Email Contact Icon -->
+                    <a class="footer-social" href="mailto:concierge@thereserve.com" title="Mail concierge">
+                        <i class="bi bi-envelope-fill"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ========================================
+         BACK-TO-TOP LINK
+         Smooth scroll to top of page
+         ======================================== -->
+    <a href="#home" title="Back to top">
+        <i class="bi bi-arrow-up"></i>
+    </a>
+
+    <!-- Bootstrap Bundle JS (includes Popper for dropdowns and modals) -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
